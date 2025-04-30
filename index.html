@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bundle of Joy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="event-handling">
+        <h2>Event Handling</h2>
+        <button id="clickButton">Click Me!</button>
+        <div id="hoverArea">Hover Over Me</div>
+        <br><input type="text" id="keypressInput" placeholder="Type here"></br>
+        <div id="keypressOutput"></div>
+        <button id="doubleClickButton">Double Click Me for a Secret!</button>
+        <div id="secretAction" style="display: none;">🤫 Secret Action Activated! 🤫</div>
+        <div id="longPressArea">Long Press Me</div>
+        <div id="longPressMessage" style="display: none;">🤫 Long Press Detected! 🤫</div>
+    </section>
+    <section id="interactive-elements">
+        <h2>🎮 Interactive Elements</h2>
+        <button id="changeTextButton">Change Text</button>
+        <button id="colorChangeButton">Change Color</button>
+        
+        <div class="image-gallery">
+            <img id="galleryImage" src="https://images.fineartamerica.com/public/images/overview/overviewBeach002.jpg" alt="Gallery Image">
+            <div class="gallery-controls">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+
+        <div class="tabs-container">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                <button class="tab-button" data-tab="tab2">Tab 2</button>
+                <button class="tab-button" data-tab="tab3">Tab 3</button>
+            </div>
+            <div id="tab1" class="tab-content active">Welcome to Tab 1! This section provides a general overview of the content you'll find across all the tabs. Think of this as your starting point. Feel free to explore the other tabs for more specific details and interactive elements</div>
+            <div id="tab2" class="tab-content">Tab 2 delves into the nitty-gritty! Here, you'll discover the specific features and functionalities showcased on this page. From the interactive image gallery to the dynamic button, each element has its own unique purpose. Click around and see what happens!</div>
+            <div id="tab3" class="tab-content">You've reached Tab 3! If you have any questions, feedback, or just want to say hello, this is the place. Feel free to get in touch through a contact form (if you add one later) or simply note down the information provided here for further engagement.</div>
+        </div>
+        <button id="animateButton">Animate Box</button>
+    </section>
+
+    <section id="form-validation">
+        <h2>📋Form Validation</h2>
+        <form id="myForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <div class="error-message" id="nameError"></div>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email address" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="password(min 8 chars)" required>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="formMessage" class="success-message" style="display: none;">Form submitted successfully!</div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
